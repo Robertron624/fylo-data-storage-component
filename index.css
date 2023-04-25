@@ -1,0 +1,98 @@
+body {
+
+    /* ## Colors */
+
+    /* ### Primary */
+
+    --gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%);
+
+    /* ### Neutral */
+
+    --pale-blue: hsl(243, 100%, 93%);
+    --grayish-blue: hsl(229, 7%, 55%);
+    --dark-blue: hsl(228, 56%, 26%);
+    --very-dark-blue: hsl(229, 57%, 11%);
+
+    font-family: 'Raleway', sans-serif;
+
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: url(./images/bg-mobile.png) no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1,p {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    width: 100%;
+}
+
+main section#app {
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 90%;
+}
+
+section#app .upper {
+    background-color: var(--dark-blue);
+    padding: 2rem;
+    border-radius: 1rem 6rem 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+section#app .upper .icons {
+    display: flex;
+    gap: 1.5rem;
+}
+
+section#app .upper .icons .icon {
+    background-color: var(--very-dark-blue);
+    border-radius: 1rem;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section#app .upper .icons .icon img {
+    width: 25px;
+    height: 25px;
+}
+
+section#app .bottom {
+    background-color: var(--dark-blue);
+    padding: 2rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    color: var(--pale-blue);
+}
+
+section#app .bottom .min-max {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    /* border: 2px solid red; */
+    background: green;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    outline: 2px solid blue;
+}
