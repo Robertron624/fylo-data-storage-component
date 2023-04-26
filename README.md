@@ -26,11 +26,13 @@ Users should be able to:
 - View the optimal layout for the site depending on their device's screen size
 
 ### Screenshot
+![image](https://user-images.githubusercontent.com/72587880/234460869-17800d0e-a172-43c5-9c1a-cf7302a8cc2c.png)
+
 
 ### Links
 
 - Solution URL: [Solution URL](https://github.com/Robertron624/fylo-data-storage-component)
-- Live Site URL: [Live site URL](https://your-live-site-url.com)
+- Live Site URL: [Live site URL](https://luxury-churros-477444.netlify.app/)
 ## My process
 
 ### Built with
