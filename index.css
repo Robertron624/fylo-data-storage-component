@@ -140,3 +140,43 @@ section#app .bottom .min-max {
     font-weight: 400;
     color: var(--grayish-blue);
 }
+
+
+@media screen and (min-width: 768px){
+
+    body {
+        background: url(./images/bg-desktop.png) no-repeat bottom fixed;
+        background-size: cover;
+        background-color: var(--very-dark-blue);
+    }
+
+    section#app  {
+        width: 80%;
+        flex-direction: row !important;
+    }
+
+    #app .upper {
+        width: 35%;
+    }
+
+    #app .bottom {
+        width: 65%;
+        height: 50%;
+        align-self: flex-end;
+    }
+
+    #app .bottom .storage-left {
+        bottom: unset;
+        top: -32px;
+        align-self: flex-end;
+    }
+
+    #app .bottom .storage-left::after {
+        content: '';
+        position: absolute;
+        top: 90%;
+        right: 0%;
+        border-top: 18px solid white;
+        border-left: 22px solid transparent;
+    }
+}
