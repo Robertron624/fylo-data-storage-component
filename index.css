@@ -80,6 +80,7 @@ section#app .bottom {
     flex-direction: column;
     gap: .5rem;
     color: var(--pale-blue);
+    position: relative;
 }
 
 section#app .bottom .min-max {
@@ -88,11 +89,54 @@ section#app .bottom .min-max {
     font-size: 12px;
 }
 
-input[type="range"]::-webkit-slider-runnable-track {
-    /* border: 2px solid red; */
-    background: green;
+.bottom .storage-outer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 20px;
+    border-radius: 40px;
+    background-color: var(--very-dark-blue);
 }
 
-input[type="range"]::-webkit-slider-thumb {
-    outline: 2px solid blue;
+.bottom .storage-outer .storage-inner {
+    position: relative;
+    width: 81.5%;
+    height: 16px;
+    background: linear-gradient(to right,hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    border-radius: 40px;
+    justify-content: end;
+    align-items: center;
+    display: flex;
+    padding-right: .2rem;
+}
+
+.bottom .storage-outer .storage-inner .point {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--pale-blue);
+}
+
+.bottom .storage-left{
+    position: absolute;
+    bottom: -33px;
+    background-color: white;
+    padding: .5rem 2rem;
+    color: black;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    align-self: center;
+}
+
+.bottom .storage-left p {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.bottom .storage-left span {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--grayish-blue);
 }
